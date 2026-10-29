@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>IEM e IER</title>
+<meta name="description" content="Apps de estudo para o ENEM: IEM (Matemática) e IER (Redação). Abra no navegador ou instale no celular.">
+<meta name="theme-color" content="#F4F1EA">
+<link rel="icon" href="https://enio-123.github.io/IER/icon.svg" type="image/svg+xml">
+<style>
+  :root { --papel: #F4F1EA; --grafite: #1C1C1C; --bg: var(--papel); --tinta: var(--grafite); color-scheme: light; }
+  @media (prefers-color-scheme: dark) { :root { --bg: var(--grafite); --tinta: var(--papel); color-scheme: dark; } }
+  :root { --linha: color-mix(in srgb, var(--tinta) 14%, var(--bg)); --txt2: color-mix(in srgb, var(--tinta) 70%, var(--bg)); }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--tinta); font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+  main { max-width: 880px; margin: 0 auto; padding: 64px 16px 48px; }
+  h1 { font-family: Georgia, "Times New Roman", serif; font-size: 34px; line-height: 1.2; margin: 0; font-weight: 600; letter-spacing: -0.01em; }
+  .sub { color: var(--txt2); margin: 10px 0 0; }
+  .apps { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 40px; }
+  .app { border: 1px solid var(--linha); border-radius: 14px; padding: 24px; display: flex; flex-direction: column; gap: 14px; }
+  .topo { display: flex; gap: 14px; align-items: center; }
+  .icone { width: 56px; height: 56px; border-radius: 13px; flex: none; background: var(--tinta); color: var(--bg); display: grid; place-items: center; font: 700 17px Georgia, serif; letter-spacing: 1px; }
+  h2 { margin: 0; font-size: 22px; }
+  .nome { color: var(--txt2); font-size: 13px; }
+  .app p { margin: 0; color: var(--txt2); }
+  ul { margin: 0; padding-left: 18px; color: var(--txt2); font-size: 14px; }
+  .acoes { display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto; padding-top: 4px; }
+  .btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px; border-radius: 9px; border: 1px solid var(--tinta); text-decoration: none; color: var(--tinta); font-weight: 500; }
+  .btn.prim { background: var(--tinta); color: var(--bg); }
+  .btn:hover { opacity: .85; }
+  .btn:focus-visible { outline: 2px solid var(--tinta); outline-offset: 2px; }
+  footer { margin-top: 40px; color: var(--txt2); font-size: 13px; border-top: 1px solid var(--linha); padding-top: 16px; }
+  @media (max-width: 640px) { main { padding-top: 40px; } h1 { font-size: 28px; } .apps { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>Estudar para o ENEM, direto no celular</h1>
+  <p class="sub">Dois apps gratuitos, sem conta e sem anúncios. Abra no navegador ou instale na tela inicial: funcionam sem internet depois da primeira vez.</p>
+  <div class="apps">
+    <section class="app" aria-labelledby="t-iem">
+      <div class="topo"><span class="icone" aria-hidden="true">IEM</span><div><h2 id="t-iem">IEM</h2><div class="nome">Instituto de Ensino de Matemática</div></div></div>
+      <p>Matemática do ENEM com as questões oficiais de 2009 a 2023.</p>
+      <ul><li>Questões com parâmetros da TRI e escada rumo aos 45 acertos</li><li>Simulados de 45 questões com tempo</li><li>Flashcards de fórmulas e plano de estudos</li></ul>
+      <div class="acoes"><a class="btn prim" href="https://enio-123.github.io/IEM/?instalar">Instalar</a><a class="btn" href="https://enio-123.github.io/IEM/">Abrir no navegador</a></div>
+    </section>
+    <section class="app" aria-labelledby="t-ier">
+      <div class="topo"><span class="icone" aria-hidden="true">IER</span><div><h2 id="t-ier">IER</h2><div class="nome">Instituto de Ensino de Redação</div></div></div>
+      <p>Redação do ENEM corrigida pelas 5 competências oficiais.</p>
+      <ul><li>Temas oficiais, folha de 30 linhas e cronômetro</li><li>Checklist, espelho de notas e correção com IA</li><li>Treino de parágrafo e montador de proposta</li></ul>
+      <div class="acoes"><a class="btn prim" href="https://enio-123.github.io/IER/?instalar">Instalar</a><a class="btn" href="https://enio-123.github.io/IER/">Abrir no navegador</a></div>
+    </section>
+  </div>
+  <footer>No iPhone, abra no Safari e use Compartilhar, depois "Adicionar à Tela de Início". No Android, use o Chrome.</footer>
+</main>
+</body>
+</html>
